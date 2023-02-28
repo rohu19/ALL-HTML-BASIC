@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script>
+           //focus is buildin method focus the form cunttent
+            function test(){
+                var f1=document.forms[0];
+                var fName=f1.firstName;
+                if(fName.value.length==0){
+                    alert("first name is required");
+                    fName.focus();
+                    return false;
+                }
+                var lName=f1.LastName;
+                if(lName.value.length==0){
+                    alert("last name is required");
+                    lName.focus();
+                    return false;
+                }
+                var AdN=f1.Address;
+                if(AdN.value.length==0){
+                    alert("Address name is required");
+                  AdN.focus();
+
+                    return false;
+                }
+                var agg=f1.age;
+                if(agg.value.length==0){
+                    alert("Age  is required");
+                  agg.focus();
+
+                    return false;
+                }
+                var em=f1.email;
+                if(em.value.length==0){
+                    alert("Email is  is required");
+                  em.focus();
+
+                    return false;
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <center>
+        <form action="success.html">
+            first name:<input type="text" name="firstName"><br>
+            Last name:<input type="text" name="LastName"><br>
+            Age:<input type="text" name="age"><br>
+            Email:<input type="text" name="email"><br>
+              Address: <textarea name="Address" rows="15"></textarea><br>
+            <input type="submit" value="submit" onclick="return test()">
+        </form>
+    </center>
+    </body>
+</html>

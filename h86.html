@@ -1,0 +1,22 @@
+<html>
+    <head>
+<script>
+            var data=["hello",10.0,78,true,'abc','hello',false];
+
+    function print(){
+        document.getElementById('el').innerHTML=data.join('  ->  ');
+
+        }
+    function sort(arg1){
+           data.sort();
+        print();
+    }
+</script>
+ 
+    </head>
+<body>
+<div id="el"></div>
+<input type="button" value="read all" onclick="print()">
+<input type="button" value=" sort" onclick="sort()">
+</body>
+    </html>

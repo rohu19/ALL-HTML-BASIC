@@ -1,0 +1,26 @@
+<html>
+    <head>
+<script>
+            var data={
+                firstname: "vijay",
+                lastname: "baghel",
+                age: 23,
+                weigth: 77.9
+            }
+            
+
+    function print(){
+        //document.getElementById('el').innerHTML=data;
+        var v1=data.firstname+"->"+data.lastname+"->"+data.age+"->"+data.weigth;
+        document.getElementById('el').innerHTML=v1;
+
+        }
+   
+</script>
+ 
+    </head>
+<body>
+<div id="el"></div>
+<input type="button" value="read all" onclick="print()">
+</body>
+    </html>

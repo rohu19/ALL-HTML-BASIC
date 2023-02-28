@@ -1,0 +1,22 @@
+<html>
+    <head>
+<script>
+            var data=["hello",10.0,78,true,'abc','hello',false];
+
+    function print(){
+        document.getElementById('el').innerHTML=data.join('  ->  ');
+
+        }
+    function remove(arg1){
+      data.splice(2,3,'test',+4654654654);
+       print();
+    }
+</script>
+ 
+    </head>
+<body>
+<div id="el"></div>
+<input type="button" value="read all" onclick="print()">
+<input type="button" value="remove and insert" onclick="remove()">
+</body>
+    </html>

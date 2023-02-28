@@ -1,0 +1,29 @@
+<html>
+    <head>
+<script>
+            var data=[
+                {firstname: "Rohan", lastname: "baghel", age: 22, weigth: 68.9},
+                {firstname: "Shreya", lastname: "Singh", age: 21, weigth: 54.9},
+                {firstname: "Ankit", lastname: "Gupta", age: 20, weigth: 47},
+                {firstname: "Tina", lastname: "Dabi", age: 22, weigth: 68.9},
+                {firstname: "Ct.Manoj", lastname: "Pandey", age: 23, weigth: 70.9},
+                {firstname: "Gyanendya", lastname: "baghel", age: 24, weigth: 88.9}
+           
+        ]
+    function print(){
+        var v1="";
+        for(i=0;i<data.length;i++){
+        v1+=data[i].firstname+"->"+data[i].lastname+"->"+data[i].age+"->"+data[i].weigth+"<br>";
+
+        }
+        document.getElementById('el').innerHTML=v1;        
+    }
+   
+</script>
+ 
+    </head>
+<body>
+<div id="el"></div>
+<input type="button" value="read all" onclick="print()">
+</body>
+    </html>

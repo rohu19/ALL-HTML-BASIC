@@ -1,0 +1,22 @@
+<html>
+    <head>
+<script>
+            var data=["hello",10.0,78,true,'abc','hello',false];
+
+    function print(){
+        document.getElementById('el').innerHTML=data.join('  and  ');
+
+        }
+    function removeLastq23(arg1){
+       // data[data.length]='new element'
+                  data.pop();
+       print();
+    }
+</script>
+ 
+    </head>removeLast
+<body>
+<div id="el"></div>
+<input type="button" value="button" onclick="removeLast()">
+</body>
+    </html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+<script>
+            var data=["hello",10.0,78,true,'abc','hello',false];
+
+    function print(){
+        document.getElementById('el').innerHTML=data.join('  ->  ');
+
+        }
+    function reverse(arg1){
+      data.reverse();
+       print();
+    }
+</script>
+ 
+    </head>
+<body>
+<div id="el"></div>
+<input type="button" value="read all" onclick="print()">
+<input type="button" value=" reverse" onclick="reverse()">
+</body>
+    </html>

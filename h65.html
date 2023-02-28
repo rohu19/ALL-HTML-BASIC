@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+           //focus is buildin method focus the form cunttent
+            function test(){
+                if(document.forms[0].firstName.value.length==0){
+                    alert("first name is required");
+                    document.forms[0].firstName.focus();
+                    return false;
+                }
+                if(document.forms[0].LastName.value.length==0){
+                    alert("last name is required");
+                    document.forms[0].LastName.focus();
+                    return false;
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <form action="success.html">
+            first name:<input type="text" name="firstName"><br>
+            Last name:<input type="text" name="LastName"><br>
+            <input type="submit" value="submit" onclick="return test()">
+        </form>
+    </body>
+</html>
